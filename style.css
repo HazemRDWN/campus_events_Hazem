@@ -1,24 +1,83 @@
+:root{
+
+  --bg-color: #fff;
+  --navbar-color: #e6e5e5;
+  --text-color: #333333;
+  --card-bg: #e6e5e5;
+
+}
+
+body{
+
+  margin: 0;
+
+}
+
 .page {
 
-    --bg-color: #fff;
-    --text-color: #333333;
-
-    background-color: var(--bg-color);
-    color: var(--text-color);
-
-    min-height: 100vh;
-
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  
+  min-height: 100vh;
+  
 }
 
 .page:has(#dark-mode-toggle:checked) {
   --bg-color: #121212;
   --text-color: #ffffff;
-  --accent-color: #4da3ff;
   --card-bg: #1e1e1e;
+  --navbar-color: #1e1e1e;
 }
 
 nav ul {
+
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  padding: 1rem;
+  margin-left: 35rem;
+  margin-right: 35rem;
+
+  background-color: var(--navbar-color);
+  border-radius: 2rem;
+
   gap: 1.5rem;
   list-style: none;
+}
+
+nav a{
+  text-decoration: none;
+  color: var(--text-color);
+
+  margin-left: 1rem;
+  margin-right: 1rem; 
+
+}
+
+.event-grid{
+
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+
+.event-card {
+
+  background-color: var(--card-bg);
+  border-radius: 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 2rem;
+
+}
+
+main h3{
+
+  margin-top: 0;
+  margin-bottom: 2rem;
+
 }
