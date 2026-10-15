@@ -6,13 +6,14 @@
     <link rel="stylesheet" href="style.css">
     <title>Events</title>
 </head>
+
 <body>
     
     <div class="page">
 
         <header>
 
-            <h1 style="margin: 0;">Campus Events Guide</h1>
+            <h1>Campus Events Guide</h1>
             <p>Your one-stop shop for tracking campus activities.</p>
         
             <nav>
@@ -25,19 +26,23 @@
                 </ul>
             </nav>
 
-            <input type="checkbox" id="dark-mode-toggle" style="display: none;">
-            <label for="dark-mode-toggle" style="cursor: pointer;">Toggle Dark Mode</label>
+            <input type="checkbox" id="dark-mode-toggle">
+            <label for="dark-mode-toggle">Toggle Dark Mode</label>
 
         </header>
 
-            <div class="event-grid">
+        <main>
 
-        <h2>Upcoming Events:</h2>
+        <section class="featured-events">
+
+            <h2>Upcoming Events:</h2>
+
+            <div class="event-grid">
                     
             <article class="event-card">
 
                 <h3>Robotics showcase</h3>
-                <img src="" alt="Picture of previous Robotics showcase">
+                <img src="images/robotics.jpg" alt="Picture of previous Robotics showcase">
                 <p><strong>Category:</strong> Science</p>
                 <p><strong>Date:</strong> November 15, 2026</p>
                 <p><strong>Venue:</strong> Academic Building, Open Air Area</p>
@@ -48,7 +53,7 @@
             <article class="event-card">
 
                 <h3>Music Festival</h3>
-                <img src="" alt="Picture of previous Music Festival">
+                <img src="images/music.jpg" alt="Picture of previous Music Festival">
                 <p><strong>Category:</strong> Arts</p>
                 <p><strong>Date:</strong> November 22, 2026</p>
                 <p><strong>Venue:</strong> Academic Building, F015</p>
@@ -59,7 +64,7 @@
               <article class="event-card">
 
                   <h3>2026 Batch Welcome Party</h3>
-                  <img src="" alt="2025 Batch Welcome Party">
+                  <img src="images/welcome.jpg" alt="2025 Batch Welcome Party">
                   <p><strong>Category:</strong> Party</p>
                   <p><strong>Date:</strong> December 5, 2026</p>
                   <p><strong>Venue:</strong>Academic Building, Gate A</p>
@@ -67,12 +72,16 @@
 
               </article>
 
-              <h2>Past events this month:</h2>
+             </div> 
 
-              <article class="event-card">
+            <h2>Past events this month:</h2>
+
+              <div class="event-grid">
+
+                <article class="event-card">
 
                 <h3>Chess Tournament</h3>
-                <img src="" alt="Last year's Chess Tournament">
+                <img src="images/chess.jpg" alt="Last year's Chess Tournament">
                 <p><strong>Category:</strong> Competitions</p>
                 <p><strong>Date:</strong> November 7, 2026</p>
                 <p><strong>Venue:</strong> Academic Building, Open Air Area</p>
@@ -83,7 +92,7 @@
               <article class="event-card">
 
                   <h3>Clubs Day</h3>
-                  <img src="" alt="Last year's Clubs day">
+                  <img src="images/clubs.jpg" alt="Last year's Clubs day">
                   <p><strong>Category:</strong> Party</p>
                   <p><strong>Date:</strong> November 1, 2026</p>
                   <p><strong>Venue:</strong>Academic Building, Gate A</p>
@@ -91,7 +100,20 @@
 
               </article>
 
-    </div>
+              </div>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Campus Events Guide</p>
+            <ul class="social-links">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </footer>
 
     </div>
 
