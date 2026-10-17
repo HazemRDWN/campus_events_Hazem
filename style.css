@@ -21,6 +21,13 @@ body{
 
 }
 
+.event-details-article h3{
+
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+
+}
+
 main h3{
 
   margin-top: 0;
@@ -34,11 +41,10 @@ h1{
 
 }
 
-.table-wrapper {
+.table-box {
 
   width: 100%;
-  max-width: 100;
-  margin: 2rem auto;
+  overflow-x: auto;
 
 }
 
@@ -107,6 +113,22 @@ main {
 
 }
 
+ol {
+
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  flex-wrap: wrap; 
+
+}
+
+ol li {
+
+  padding: 1rem;
+
+}
+
 nav ul {
 
   display: flex;
@@ -134,8 +156,6 @@ fieldset {
   flex-direction: column;
   align-items:start;
 
-  padding: auto;
-
   margin: 2rem auto;
 
   max-width: 500px;
@@ -144,9 +164,25 @@ fieldset {
 
 }
 
+video {
+
+  max-width: 100%;
+  height: auto;
+
+}
+
+.event-details-article {
+
+  width: 100%;
+  max-width: 800px;
+  
+}
+
 nav a{
+
   text-decoration: none;
   color: var(--text-color);
+  transition: opacity 0.3s ease;
 
 }
 
@@ -165,11 +201,25 @@ nav a:hover {
 
 }
 
+.event-details-article form div{
+
+  padding: 0.5rem;
+
+}
+
+.event-details-article form {
+
+  margin: 1rem;
+
+}
+
 .event-card {
 
   background-color: var(--card-bg);
   border-radius: 3rem;
   padding: 2rem;
+
+  transition: transform 0.3s ease;
 
 }
 
@@ -238,7 +288,7 @@ footer a {
 /*Adapt the page layouts to different widths using @media and adjusting grids*/
 
 /*Tablet layout*/
-@media (max-width: 1280px) {
+@media (max-width: 1024px) {
 
   .event-grid {
     grid-template-columns: repeat(2, 1fr); 
@@ -247,14 +297,10 @@ footer a {
 }
 
 /*Mobile layout*/
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
   .event-grid {
     grid-template-columns: 1fr; 
-  }
-  
-  .table-wrapper {
-    width: 100%;
   }
 
 }
