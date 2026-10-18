@@ -66,29 +66,33 @@
                     <h3>Agenda</h3>
 
                     <ol>
-                        <li>10:00 AM: Opening and welcome</li>
-                        <li>10:30 AM: Robot demos by club teams</li>
-                        <li>2:30 PM: Awards</li>
+                        <li><strong>10:00 AM:</strong> Opening and welcome</li>
+                        <li><strong>10:30 AM:</strong> Robot demos by club teams</li>
+                        <li><strong>2:30 PM:</strong> Awards</li>
                     </ol>
 
                 </section>
  
                 <form action="" method="get">
 
-                    <h3>Event Review</h3>
+                    <fieldset>
 
-                    <div><label for="reviewer-name">Your name:</label>
-                    <input type="text" id="reviewer-name" name="reviewer-name" maxlength="50" required></div>
-                    <div><label for="review-rating">Rating (1-5):</label>
+                        <legend><strong>Review</strong></legend>
 
-                    <input type="number" id="review-rating" name="review-rating" min="1" max="5" required></div>
-                    <div><label for="review-text">Review:</label>
+                        <div><label for="reviewer-name">Your name:</label>
+                        <input type="text" id="reviewer-name" name="reviewer-name" maxlength="50" required></div>
+                        <div><label for="review-rating">Rating (1-5):</label>
 
-                    <textarea id="review-text" name="review-text" rows="4" maxlength="500" required></textarea></div>
-                    <div><label for="review-photo">Attach a photo:</label>
-                        
-                    <input type="file" id="review-photo" name="review-photo" accept="image/*"></div>
-                    <div><button type="submit">Submit Review</button></div>
+                        <input type="number" id="review-rating" name="review-rating" min="1" max="5" required></div>
+                        <div><label for="review-text">Review:</label>
+
+                        <textarea id="review-text" name="review-text" rows="4" maxlength="500" required></textarea></div>
+                        <div><label for="review-photo">Attach a photo:</label>
+                            
+                        <input type="file" id="review-photo" name="review-photo" accept="image/*"></div>
+                        <div><button type="submit">Submit Review</button></div>
+
+                    </fieldset>
 
                 </form>
 
